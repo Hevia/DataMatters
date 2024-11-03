@@ -15,31 +15,114 @@ detector = LanguageDetectorBuilder.from_languages(*languages).build()
 # bunch of dumb tech junk that you don't need to worry about, but its good to say you used it!
 dataset = load_dataset("nedjmaou/MLMA_hate_speech")
 
-# The data is now in a list format, and the code to iterate through the list is prepared for you
+# put data in list format
 tweets = dataset['train']['tweet']
 
 # We load the list of hate speech words into a nested dictionary
+# Currently has some fake stuff for demo, replace with real speech when available.
+# Current code assumes that each entry is of form
+    # word : {
+        #'target' : < >,
+        #'sentiment' : < >,
+#       }
+#possible options for target {gender, origin, disability, sexual_orientation, religion, other}
+#possible options for sentiment are {positive, neutral, negative}
+fake_hate_speech = {
+    'hey' : {
+        'target' : 'sexual_orientation',
+        'sentiment' : 'neutral'
+    },
+    'buzzfeed' : {
+        'target' : 'religion',
+        'sentiment' : 'negative'
+    },
+    'oui' : {
+        'target' : 'origin',
+        'sentiment' : 'positive'
+    }
+}
 
+#create dictionary with counts of tweets containing several categories of speech
+hate_speech_counts = {
+    'total_hate_all': 0,
+    Language.ENGLISH:{
+        'total' : 0,
+        'total_hate': 0,
+        'target': {
+            'gender': 0,
+            'origin' : 0,
+            'disability' : 0,
+            'sexual_orientation' : 0,
+            'religion' : 0,
+            'other': 0,
+        },
+        'sentiment':{
+            'positive' : 0,
+            'negative' : 0,
+            'neutral' : 0,
+        }
+    },
+    Language.FRENCH:{
+        'total' : 0,
+        'total_hate': 0,
+        'target': {
+            'gender': 0,
+            'origin' : 0,
+            'disability' : 0,
+            'sexual_orientation' : 0,
+            'religion' : 0,
+            'other': 0,
+        },
+        'sentiment':{
+            'positive' : 0,
+            'negative' : 0,
+            'neutral' : 0,
+        }
+    },
+    Language.ARABIC:{
+        'total' : 0,
+        'total_hate': 0,
+        'target': {
+            'gender': 0,
+            'origin' : 0,
+            'disability' : 0,
+            'sexual_orientation' : 0,
+            'religion' : 0,
+            'other': 0,
+        },
+        'sentiment':{
+            'positive' : 0,
+            'negative' : 0,
+            'neutral' : 0,
+        }
+    }
+}
+total_tweets = 0
 
-# Puts some variables here to record whatever you think is necessary
-# TODO
-
-# We're going to do a basic keyword search for hate speech in the tweets
-# Iterate through the tweets
+# do a basic keyword search for hate speech in the tweets
 for tweet in tweets:
-    # You should probably first convert the tweet to lowercase as a form of normalization
-    # TODO
+    # detect language
+    language = detector.detect_language_of(tweet)
 
-    # Use the nltk tokenizer to tokenize the tweet
-    # Massive hint: Just use nltk.word_tokenize(<lowercase variable of tweet here>)
-    # TODO
-
-    # Detect the language and record that result for later tracking
-    # TODO
+    # normalize and tokenize tweets
+    tokens = nltk.word_tokenize(tweet.lower())
 
     # Iterate through the tokens and check if they are in the hate speech dictionary
-    # There are several categories to check through
-    # If they are, record it, else move on but record any misses
-    # TODO
+    for token in tokens:
+        total_tweets += 1
+        hate_speech_counts[language]['total'] += 1
+        entry = fake_hate_speech.get(token)
+        if entry:
+            hate_speech_counts['total_hate_all'] += 1
+            hate_speech_counts[language]['total_hate'] += 1
+            hate_speech_counts[language]['target'][entry['target']] += 1
+            hate_speech_counts[language]['sentiment'][entry['sentiment']] += 1
 
-    pass # Remove this line when you start coding
+tweets_no_hate_speech = total_tweets - hate_speech_counts['total_hate_all']
+
+#demo for proof of concept, delete at will
+print("Total tweets containing hate speech: ", hate_speech_counts['total_hate_all'])
+print("Total tweets without hate speech: ", tweets_no_hate_speech)
+print("French tweets: ", hate_speech_counts[Language.FRENCH]['total'])
+print("French tweets containing hate speech: ", hate_speech_counts[Language.FRENCH]['total_hate'])
+print("English tweets containing anti-lgbt hate speech: ", hate_speech_counts[Language.ENGLISH]['target']['sexual_orientation'])

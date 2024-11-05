@@ -1,0 +1,196 @@
+{
+    "english": {
+        "fag" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "queer" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "neutral"
+        },
+        "nigga" : {
+            "target" : "race",
+            "sentiment" : "neutral"
+        },
+        "nigger" : {
+            "target" : "race",
+            "sentiment" : "negative"
+        },
+        "spic" : {
+            "target" : "race",
+            "sentiment" : "negative"
+        },
+        "jew" : {
+            "target" : "religion",
+            "sentiment" : "neutral"
+        },
+        "faggot" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "retard" : {
+            "target" : "disability",
+            "sentiment" : "negative"
+        },
+        "moron" : {
+            "target" : "disability",
+            "sentiment" : "negative"
+        },
+        "cripple" : {
+            "target" : "disability",
+            "sentiment" : "negative"
+        },
+        "cracker" : {
+            "target" : "race",
+            "sentiment" : "neutral"
+        },
+        "gook" : {
+            "target" : "race",
+            "sentiment" : "negative"
+        },
+        "greaser" : {
+            "target" : "race",
+            "sentiment" : "negative"
+        },
+        "gringo" : {
+            "target" : "race",
+            "sentiment" : "negative"
+        },
+        "gusano" : {
+            "target" : "race",
+            "sentiment" : "negative"
+        },
+        "wetback" : {
+            "target" : "race",
+            "sentiment" : "negative"
+        },
+        "slave" : {
+            "target" : "race",
+            "sentiment" : "neutral"
+        },
+        "oreo" : {
+            "target" : "race",
+            "sentiment" : "neutral"
+        },
+        "chimp" : {
+            "target" : "race",
+            "sentiment" : "neutral"
+        },
+        "orc" : {
+            "target" : "race",
+            "sentiment" : "neutral"
+        },
+        "pocahontas" : {
+            "target" : "race",
+            "sentiment" : "neutral"
+        },
+        "redskin" : {
+            "target" : "race",
+            "sentiment" : "neutral"
+        },
+        "snowflake" : {
+            "target" : "other",
+            "sentiment" : "neutral"
+        },
+        "goy" : {
+            "target" : "religion",
+            "sentiment" : "negative"
+        },
+        "kike" : {
+            "target" : "religion",
+            "sentiment" : "negative"
+        },
+        "yid" : {
+            "target" : "religion",
+            "sentiment" : "neutral"
+        },
+        "osama" : {
+            "target" : "religion",
+            "sentiment" : "neutral"
+        },
+        "terrorist" : {
+            "target" : "religion",
+            "sentiment" : "neutral"
+        },
+        "raghead" : {
+            "target" : "religion",
+            "sentiment" : "negative"
+        },
+        "sheep" : {
+            "target" : "other",
+            "sentiment" : "negative"
+        },
+        "dim" : {
+            "target" : "disability",
+            "sentiment" : "neutral"
+        },
+        "disabled" : {
+            "target" : "disability",
+            "sentiment" : "neutral"
+        },
+        "freak" : {
+            "target" : "disability",
+            "sentiment" : "neutral"
+        },
+        "handicap" : {
+            "target" : "disability",
+            "sentiment" : "neutral"
+        },
+        "junkie" : {
+            "target" : "other",
+            "sentiment" : "neutral"
+        },
+        "midget" : {
+            "target" : "other",
+            "sentiment" : "negative"
+        },
+        "mong" : {
+            "target" : "disability",
+            "sentiment" : "negative"
+        },
+        "retarded" : {
+            "target" : "disability",
+            "sentiment" : "negative"
+        },
+        "schizo" : {
+            "target" : "disability",
+            "sentiment" : "negative"
+        },
+        "spaz" : {
+            "target" : "disability",
+            "sentiment" : "negative"
+        },
+        "yuppie" : {
+            "target" : "disability",
+            "sentiment" : "neutral"
+        },
+        "tard" : {
+            "target" : "disability",
+            "sentiment" : "negative"
+        },
+        "mongol" : {
+            "target" : "disability",
+            "sentiment" : "neutral"
+        },
+        "deformed" : {
+            "target" : "disability",
+            "sentiment" : "neutral"
+        },
+        "autistic" : {
+            "target" : "disability",
+            "sentiment" : "neutral"
+        }
+    }, 
+    "french": {
+        "salut" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "neutral"
+        }
+    },
+    "arabic":{
+        "salut" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "neutral"
+        }
+    }
+}

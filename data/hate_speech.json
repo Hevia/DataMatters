@@ -176,6 +176,102 @@
             "target" : "disability",
             "sentiment" : "neutral"
         },
+        "whore" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "slut" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "bitch" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "hag" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "cunt" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "tranny" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "bimbo" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "feminazi" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "twat" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "cuckold" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "cuck" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "neckbeard" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "neutral"
+        },
+        "manlet" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "soy" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "neutral"
+        },
+        "prick" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "lesbian" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "neutral"
+        },
+        "fruity" : {
+            "target" : "men",
+            "sentiment" : "negative"
+        },
+        "groomer" : {
+            "target" : "men",
+            "sentiment" : "negative"
+        },
+        "twink" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "cocksucker" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "shemale" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "lesbo" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "dyke" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "negative"
+        },
+        "fairy" : {
+            "target" : "sexual_orientation",
+            "sentiment" : "neutral"
+        },
         "autistic" : {
             "target" : "disability",
             "sentiment" : "neutral"

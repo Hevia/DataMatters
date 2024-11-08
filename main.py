@@ -1,6 +1,7 @@
 from lingua import Language, LanguageDetectorBuilder
 from datasets import load_dataset
 import nltk
+import json
 
 # Download punkt if we dont already have it for later tokenization
 nltk.download('punkt')
@@ -25,27 +26,15 @@ tweets = dataset['train']['tweet']
         #'target' : < >,
         #'sentiment' : < >,
 #       }
-#possible options for target {gender, origin, disability, sexual_orientation, religion, other}
+#possible options for target {gender, origin, disability, sexual_orientation, race, religion, other}
 #possible options for sentiment are {positive, neutral, negative}
-fake_hate_speech = {
-    'hey' : {
-        'target' : 'sexual_orientation',
-        'sentiment' : 'neutral'
-    },
-    'buzzfeed' : {
-        'target' : 'religion',
-        'sentiment' : 'negative'
-    },
-    'oui' : {
-        'target' : 'origin',
-        'sentiment' : 'positive'
-    }
-}
+with open('./data/hate_speech.json', 'r') as json_file:
+    hate_speech = json.load(json_file)
 
 #create dictionary with counts of tweets containing several categories of speech
 hate_speech_counts = {
     'total_hate_all': 0,
-    Language.ENGLISH:{
+    'english':{
         'total' : 0,
         'total_hate': 0,
         'target': {
@@ -53,6 +42,7 @@ hate_speech_counts = {
             'origin' : 0,
             'disability' : 0,
             'sexual_orientation' : 0,
+            'race' : 0,
             'religion' : 0,
             'other': 0,
         },
@@ -62,7 +52,7 @@ hate_speech_counts = {
             'neutral' : 0,
         }
     },
-    Language.FRENCH:{
+    'french':{
         'total' : 0,
         'total_hate': 0,
         'target': {
@@ -70,6 +60,7 @@ hate_speech_counts = {
             'origin' : 0,
             'disability' : 0,
             'sexual_orientation' : 0,
+            'race' : 0,
             'religion' : 0,
             'other': 0,
         },
@@ -79,7 +70,7 @@ hate_speech_counts = {
             'neutral' : 0,
         }
     },
-    Language.ARABIC:{
+    'arabic':{
         'total' : 0,
         'total_hate': 0,
         'target': {
@@ -87,6 +78,7 @@ hate_speech_counts = {
             'origin' : 0,
             'disability' : 0,
             'sexual_orientation' : 0,
+            'race' : 0,
             'religion' : 0,
             'other': 0,
         },
@@ -102,7 +94,7 @@ total_tweets = 0
 # do a basic keyword search for hate speech in the tweets
 for tweet in tweets:
     # detect language
-    language = detector.detect_language_of(tweet)
+    language = detector.detect_language_of(tweet).name.lower()
 
     # normalize and tokenize tweets
     tokens = nltk.word_tokenize(tweet.lower())
@@ -111,7 +103,7 @@ for tweet in tweets:
     for token in tokens:
         total_tweets += 1
         hate_speech_counts[language]['total'] += 1
-        entry = fake_hate_speech.get(token)
+        entry = hate_speech.get(language).get(token)
         if entry:
             hate_speech_counts['total_hate_all'] += 1
             hate_speech_counts[language]['total_hate'] += 1
@@ -123,6 +115,5 @@ tweets_no_hate_speech = total_tweets - hate_speech_counts['total_hate_all']
 #demo for proof of concept, delete at will
 print("Total tweets containing hate speech: ", hate_speech_counts['total_hate_all'])
 print("Total tweets without hate speech: ", tweets_no_hate_speech)
-print("French tweets: ", hate_speech_counts[Language.FRENCH]['total'])
-print("French tweets containing hate speech: ", hate_speech_counts[Language.FRENCH]['total_hate'])
-print("English tweets containing anti-lgbt hate speech: ", hate_speech_counts[Language.ENGLISH]['target']['sexual_orientation'])
+print("English tweet hate speech data: ", hate_speech_counts['english'])
+print("English tweets containing anti-lgbt hate speech: ", hate_speech_counts['english']['target']['sexual_orientation'])

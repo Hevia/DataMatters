@@ -19,83 +19,36 @@ dataset = load_dataset("nedjmaou/MLMA_hate_speech")
 # put data in list format
 tweets = dataset['train']['tweet']
 
-# We load the list of hate speech words into a nested dictionary
-# Currently has some fake stuff for demo, replace with real speech when available.
-# Current code assumes that each entry is of form
-    # word : {
-        #'target' : < >,
-        #'sentiment' : < >,
-#       }
-#possible options for target {gender, origin, disability, sexual_orientation, race, religion, other}
-#possible options for sentiment are {positive, neutral, negative}
+#load the list of hate speech words into a nested dictionary
 with open('./data/hate_speech.json', 'r') as json_file:
     hate_speech = json.load(json_file)
 
 #create dictionary with counts of tweets containing several categories of speech
-hate_speech_counts = {
-    'total_hate_all': 0,
-    'english':{
-        'total' : 0,
-        'total_hate': 0,
-        'target': {
-            'gender': 0,
-            'origin' : 0,
-            'disability' : 0,
-            'sexual_orientation' : 0,
-            'race' : 0,
-            'religion' : 0,
-            'other': 0,
-        },
-        'sentiment':{
-            'positive' : 0,
-            'negative' : 0,
-            'neutral' : 0,
-        }
-    },
-    'french':{
-        'total' : 0,
-        'total_hate': 0,
-        'target': {
-            'gender': 0,
-            'origin' : 0,
-            'disability' : 0,
-            'sexual_orientation' : 0,
-            'race' : 0,
-            'religion' : 0,
-            'other': 0,
-        },
-        'sentiment':{
-            'positive' : 0,
-            'negative' : 0,
-            'neutral' : 0,
-        }
-    },
-    'arabic':{
-        'total' : 0,
-        'total_hate': 0,
-        'target': {
-            'gender': 0,
-            'origin' : 0,
-            'disability' : 0,
-            'sexual_orientation' : 0,
-            'race' : 0,
-            'religion' : 0,
-            'other': 0,
-        },
-        'sentiment':{
-            'positive' : 0,
-            'negative' : 0,
-            'neutral' : 0,
-        }
-    }
-}
+hate_speech_counts = {}
 total_tweets = 0
 
 # do a basic keyword search for hate speech in the tweets
 for tweet in tweets:
-    # detect language
+    # detect language and add to counts if not already present
     language = detector.detect_language_of(tweet).name.lower()
-
+    if language not in hate_speech_counts:
+        hate_speech_counts[language] = {
+        'total': 0,
+        'total_hate': 0,
+        'target': {
+            'gender': 0,
+            'origin': 0,
+            'disability': 0,
+            'sexual_orientation': 0,
+            'race': 0,
+            'religion': 0,
+            'other': 0,
+        },
+        'sentiment': {
+            'negative': 0,
+            'neutral': 0,
+        }
+    }
     # normalize and tokenize tweets
     tokens = nltk.word_tokenize(tweet.lower())
 
@@ -105,15 +58,16 @@ for tweet in tweets:
         hate_speech_counts[language]['total'] += 1
         entry = hate_speech.get(language).get(token)
         if entry:
-            hate_speech_counts['total_hate_all'] += 1
             hate_speech_counts[language]['total_hate'] += 1
             hate_speech_counts[language]['target'][entry['target']] += 1
             hate_speech_counts[language]['sentiment'][entry['sentiment']] += 1
 
-tweets_no_hate_speech = total_tweets - hate_speech_counts['total_hate_all']
+
+total_hate_speech_all = hate_speech_counts['french']['total_hate'] + hate_speech_counts['english']['total_hate'] + hate_speech_counts['arabic']['total_hate']
+tweets_no_hate_speech = total_tweets - total_hate_speech_all
 
 #demo for proof of concept, delete at will
-print("Total tweets containing hate speech: ", hate_speech_counts['total_hate_all'])
+print("Total tweets containing hate speech: ", total_hate_speech_all )
 print("Total tweets without hate speech: ", tweets_no_hate_speech)
 print("English tweet hate speech data: ", hate_speech_counts['english'])
 print("English tweets containing anti-lgbt hate speech: ", hate_speech_counts['english']['target']['sexual_orientation'])

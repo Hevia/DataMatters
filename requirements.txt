@@ -1,4 +1,3 @@
 datasets
 lingua-language-detector
 nltk
-gensim

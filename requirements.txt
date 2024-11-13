@@ -2,3 +2,6 @@ datasets
 lingua-language-detector
 nltk
 gensim
+matplotlib
+bertopic
+seaborn

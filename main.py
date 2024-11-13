@@ -76,9 +76,9 @@ for language in hate_speech_counts:
     # Create DataFrame for target categories
     target_df = pd.DataFrame.from_dict(hate_speech_counts[language]['target'], orient='index', columns=['count'])
     target_df.index.name = 'Target'  # Add Target header
-    target_df.to_csv(f'./data/targets/{language}_counts.csv')
+    target_df.to_csv(f'./output/targets/{language}_counts.csv')
     
     # Create DataFrame for sentiment categories
     sentiment_df = pd.DataFrame.from_dict(hate_speech_counts[language]['sentiment'], orient='index', columns=['count'])
     sentiment_df.index.name = 'Sentiment'  # Add Sentiment header
-    sentiment_df.to_csv(f'./data/sentiments/{language}_counts.csv')
+    sentiment_df.to_csv(f'./output/sentiments/{language}_counts.csv')

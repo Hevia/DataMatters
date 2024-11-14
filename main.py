@@ -37,7 +37,8 @@ for tweet in tweets:
             'total': 0,
             'total_hate': 0,
             'target': {},
-            'sentiment': {}
+            'sentiment': {},
+            "group": {}
         }
     
     # normalize and tokenize tweets
@@ -67,6 +68,12 @@ for tweet in tweets:
                     hate_speech_counts[language]['sentiment'][sentiment] = 0
                 hate_speech_counts[language]['sentiment'][sentiment] += 1
 
+                # Dynamically add group category if not exists
+                group = entry['group']
+                if group not in hate_speech_counts[language]['group']:
+                    hate_speech_counts[language]['group'][group] = 0
+                hate_speech_counts[language]['group'][group] += 1
+
 
 total_hate_speech_all = sum(hate_speech_counts[lang]['total_hate'] for lang in hate_speech_counts)
 tweets_no_hate_speech = total_tweets - total_hate_speech_all
@@ -82,3 +89,8 @@ for language in hate_speech_counts:
     sentiment_df = pd.DataFrame.from_dict(hate_speech_counts[language]['sentiment'], orient='index', columns=['count'])
     sentiment_df.index.name = 'Sentiment'  # Add Sentiment header
     sentiment_df.to_csv(f'./output/sentiments/{language}_counts.csv')
+
+    # Create DataFrame for group categories
+    group_df = pd.DataFrame.from_dict(hate_speech_counts[language]['group'], orient='index', columns=['count'])
+    group_df.index.name = 'Group'  # Add Group header
+    group_df.to_csv(f'./output/groups/{language}_counts.csv')

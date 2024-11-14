@@ -18,7 +18,7 @@ tweets = dataset['train']['tweet']
 nltk.download('stopwords')
 
 # Define stop words and punctuation
-stop_words = set(stopwords.words('english'))
+stop_words = set(stopwords.words('english')).union(set(stopwords.words('arabic'))).union(set(stopwords.words('french')))
 punctuation = set(string.punctuation)
 custom_stop_words = set(["user", "y'all", "ur", "url", "ok", "oh", "lol", "lmao", "....."])
 remove_words = stop_words.union(punctuation).union(custom_stop_words)

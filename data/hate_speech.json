@@ -1,828 +1,1158 @@
 {
     "english": {
-        "fag" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "queer" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "nigga" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "nigger" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "spic" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "jew" : {
-            "target" : "religion",
-            "sentiment" : "neutral"
-        },
-        "faggot" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "retard" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "moron" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "cripple" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "cracker" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "gook" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "greaser" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "gringo" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "gusano" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "wetback" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "slave" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "oreo" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "chimp" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "orc" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "pocahontas" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "redskin" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "snowflake" : {
-            "target" : "other",
-            "sentiment" : "neutral"
-        },
-        "goy" : {
-            "target" : "religion",
-            "sentiment" : "negative"
-        },
-        "kike" : {
-            "target" : "religion",
-            "sentiment" : "negative"
-        },
-        "yid" : {
-            "target" : "religion",
-            "sentiment" : "neutral"
-        },
-        "osama" : {
-            "target" : "religion",
-            "sentiment" : "neutral"
-        },
-        "terrorist" : {
-            "target" : "religion",
-            "sentiment" : "neutral"
-        },
-        "raghead" : {
-            "target" : "religion",
-            "sentiment" : "negative"
-        },
-        "sheep" : {
-            "target" : "other",
-            "sentiment" : "negative"
-        },
-        "dim" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "disabled" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "freak" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "handicap" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "junkie" : {
-            "target" : "other",
-            "sentiment" : "neutral"
-        },
-        "midget" : {
-            "target" : "other",
-            "sentiment" : "negative"
-        },
-        "mong" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "retarded" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "schizo" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "spaz" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "yuppie" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "tard" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "mongol" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "deformed" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "whore" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "slut" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "bitch" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "hag" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "cunt" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "tranny" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "bimbo" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "feminazi" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "twat" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "cuckold" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "cuck" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "neckbeard" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "manlet" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "soy" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "prick" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "lesbian" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "fruity" : {
-            "target" : "men",
-            "sentiment" : "negative"
-        },
-        "groomer" : {
-            "target" : "men",
-            "sentiment" : "negative"
-        },
-        "twink" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "cocksucker" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "shemale" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "lesbo" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "dyke" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "fairy" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "autistic" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
+        "fag": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "fags": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "women": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "women"
+        },
+        "woman": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "women"
+        },
+        "men": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "men"
+        },
+        "man": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "men"
+        },
+        "queer": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "queers": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "nigga": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "niggas": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "niggaers": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "nigger": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "african"
+        },
+        "spic": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "jew": {
+            "target": "religion",
+            "sentiment": "neutral",
+            "group": "jewish"
+        },
+        "faggot": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "retard": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "retards": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "moron": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "morons": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "cripple": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "cracker": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "gook": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "asian"
+        },
+        "greaser": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "gringo": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "gusano": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "wetback": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "slave": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "oreo": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "chimp": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "orc": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "pocahontas": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "native"
+        },
+        "redskin": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "native"
+        },
+        "snowflake": {
+            "target": "other",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "goy": {
+            "target": "religion",
+            "sentiment": "negative",
+            "group": "jewish"
+        },
+        "kike": {
+            "target": "religion",
+            "sentiment": "negative",
+            "group": "jewish"
+        },
+        "yid": {
+            "target": "religion",
+            "sentiment": "neutral",
+            "group": "jewish"
+        },
+        "osama": {
+            "target": "religion",
+            "sentiment": "neutral",
+            "group": "middle-eastern"
+        },
+        "terrorist": {
+            "target": "religion",
+            "sentiment": "neutral",
+            "group": "middle-eastern"
+        },
+        "raghead": {
+            "target": "religion",
+            "sentiment": "negative",
+            "group": "middle-eastern"
+        },
+        "sheep": {
+            "target": "other",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "dim": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "disabled": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "freak": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "handicap": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "junkie": {
+            "target": "other",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "midget": {
+            "target": "other",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "mong": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "retarded": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "schizo": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "spaz": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "yuppie": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "tard": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "mongol": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "deformed": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "whore": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "slut": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "bitch": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "hag": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "cunt": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "tranny": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "bimbo": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "feminazi": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "twat": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "cuckold": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "cuck": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "neckbeard": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "men"
+        },
+        "manlet": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "soy": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "men"
+        },
+        "prick": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "lesbian": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "women"
+        },
+        "fruity": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "groomer": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "twink": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "cocksucker": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "shemale": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "lesbo": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "dyke": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "fairy": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "women"
+        },
+        "autistic": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
         }
-    }, 
+    },
     "french": {
-        "pédé" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "queer" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "négro" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "nègre" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "espingouin" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "juif" : {
-            "target" : "religion",
-            "sentiment" : "neutral"
-        },
-        "pédale" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "débile" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "idiot" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "infirme" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "blanc-bec" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "jaune" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "gras-double" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "gringo" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "vermine" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "wetback" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "esclave" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "oreo" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "singe" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "orc" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "pocahontas" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "peau-rouge" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "fragile" : {
-            "target" : "other",
-            "sentiment" : "neutral"
-        },
-        "goy" : {
-            "target" : "religion",
-            "sentiment" : "negative"
-        },
-        "youpin" : {
-            "target" : "religion",
-            "sentiment" : "negative"
-        },
-        "yidd" : {
-            "target" : "religion",
-            "sentiment" : "neutral"
-        },
-        "osama" : {
-            "target" : "religion",
-            "sentiment" : "neutral"
-        },
-        "terroriste" : {
-            "target" : "religion",
-            "sentiment" : "neutral"
-        },
-        "tête de chiffon" : {
-            "target" : "religion",
-            "sentiment" : "negative"
-        },
-        "mouton" : {
-            "target" : "other",
-            "sentiment" : "negative"
-        },
-        "crétin" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "handicapé" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "freak" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "handicap" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "drogué" : {
-            "target" : "other",
-            "sentiment" : "neutral"
-        },
-        "nain" : {
-            "target" : "other",
-            "sentiment" : "negative"
-        },
-        "mongolien" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "attardé" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "schizo" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "spaz" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "yuppie" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "débile" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "mongol" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "déformé" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "putain" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "salope" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "chienne" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "mégère" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "conne" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "travelo" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "bimbo" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "féminazie" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "connard" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "cocu" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "cuck" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "barbiche" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "minus" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "soja" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "connard" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "lesbienne" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "efféminé" : {
-            "target" : "men",
-            "sentiment" : "negative"
-        },
-        "gourou" : {
-            "target" : "men",
-            "sentiment" : "negative"
-        },
-        "jeune premier" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "suceur" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "travelo" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "lesbienne" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "gouine" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "fée" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "autiste" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
+        "pédé": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "pédés": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "femmes": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "women"
+        },
+        "femme": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "women"
+        },
+        "hommes": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "men"
+        },
+        "homme": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "men"
+        },
+        "bizarre": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "négro": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "négros": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "nègre": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "african"
+        },
+        "épicé": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "Juif": {
+            "target": "religion",
+            "sentiment": "neutral",
+            "group": "jewish"
+        },
+        "fagot": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "retard": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "retarde": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "imbécile": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "crétins": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "paralyser": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "craquelin": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "ok": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "asian"
+        },
+        "graisseur": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "gringo": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "gusano": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "dos mouillé": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "esclave": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "oréo": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "chimpanzé": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "orc": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "Pocahontas": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "native"
+        },
+        "peau rouge": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "native"
+        },
+        "flocon de neige": {
+            "target": "other",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "goy": {
+            "target": "religion",
+            "sentiment": "negative",
+            "group": "jewish"
+        },
+        "kiké": {
+            "target": "religion",
+            "sentiment": "negative",
+            "group": "jewish"
+        },
+        "ouais": {
+            "target": "religion",
+            "sentiment": "neutral",
+            "group": "jewish"
+        },
+        "Oussama": {
+            "target": "religion",
+            "sentiment": "neutral",
+            "group": "middle-eastern"
+        },
+        "terroriste": {
+            "target": "religion",
+            "sentiment": "neutral",
+            "group": "middle-eastern"
+        },
+        "tête-à-tête": {
+            "target": "religion",
+            "sentiment": "negative",
+            "group": "middle-eastern"
+        },
+        "mouton": {
+            "target": "other",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "faible": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "désactivé": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "monstre": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "handicap": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "junkie": {
+            "target": "other",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "nain": {
+            "target": "other",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "mongo": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "retardé": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "schizo": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "spaz": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "yuppie": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "tard": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "mongol": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "déformé": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "putain": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "salope": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "chienne": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "vieille sorcière": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "chatte": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "transsexuelle": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "bimbo": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "féminazi": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "cocu": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "barbe": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "men"
+        },
+        "manteau": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "soja": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "men"
+        },
+        "piquer": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "lesbienne": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "fruité": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "toiletteur": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "minet": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "enfoiré": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "transexuelle": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "digue": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "fée": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "women"
+        },
+        "autistique": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
         }
     },
     "arabic": {
-        "شاذ" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "متحول" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "زنج" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "عبد" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "خنزير" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "يهودي" : {
-            "target" : "religion",
-            "sentiment" : "neutral"
-        },
-        "مخنث" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "معاق" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "أبله" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "مشلول" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "صليبي" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "كوري" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "دهن" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "غريب" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "دودة" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "بلل" : {
-            "target" : "race",
-            "sentiment" : "negative"
-        },
-        "عبد" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "بسكويت" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "قرد" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "عفريت" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "بوكاهونتاس" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "أحمر الجلد" : {
-            "target" : "race",
-            "sentiment" : "neutral"
-        },
-        "ثلجية" : {
-            "target" : "other",
-            "sentiment" : "neutral"
-        },
-        "جوي" : {
-            "target" : "religion",
-            "sentiment" : "negative"
-        },
-        "كايك" : {
-            "target" : "religion",
-            "sentiment" : "negative"
-        },
-        "يد" : {
-            "target" : "religion",
-            "sentiment" : "neutral"
-        },
-        "أسامة" : {
-            "target" : "religion",
-            "sentiment" : "neutral"
-        },
-        "إرهابي" : {
-            "target" : "religion",
-            "sentiment" : "neutral"
-        },
-        "رأس الخيمة" : {
-            "target" : "religion",
-            "sentiment" : "negative"
-        },
-        "خروف" : {
-            "target" : "other",
-            "sentiment" : "negative"
-        },
-        "باهت" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "معاق" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "غريب" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "عائق" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "مدمن" : {
-            "target" : "other",
-            "sentiment" : "neutral"
-        },
-        "قزم" : {
-            "target" : "other",
-            "sentiment" : "negative"
-        },
-        "منغولي" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "متخلف" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "فصامي" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "توتر" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "حضري" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "مغفل" : {
-            "target" : "disability",
-            "sentiment" : "negative"
-        },
-        "منغولي" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "مشوه" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
-        },
-        "عاهرة" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "ساقطة" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "كلبة" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "عجوز" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "عاهرة" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "رجلان" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "ببغاء" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "نازي" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "ضربة" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "قرن" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "مغفل" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "صويا" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "متوسط" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "لوطي" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "شاذ" : {
-            "target" : "men",
-            "sentiment" : "negative"
-        },
-        "ناصح" : {
-            "target" : "men",
-            "sentiment" : "negative"
-        },
-        "ثنائي" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "ماصوص" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "امرأة ذكر" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "مرأة" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "قاحلة" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "negative"
-        },
-        "ملاك" : {
-            "target" : "sexual_orientation",
-            "sentiment" : "neutral"
-        },
-        "توحد" : {
-            "target" : "disability",
-            "sentiment" : "neutral"
+        "شاذ": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "الشواذ": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "نحيف": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "women"
+        },
+        "امرأة": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "women"
+        },
+        "الرجال": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "men"
+        },
+        "رجل": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "men"
+        },
+        "مثلي": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "الكويري": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "نيغا": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "زنوج": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "الزنوج": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "زنجي": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "african"
+        },
+        "متكلم بالإسبانية": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "اليهودي": {
+            "target": "religion",
+            "sentiment": "neutral",
+            "group": "jewish"
+        },
+        "شاذ جنسيا": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "يؤخر": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "المغفل": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "البلداء": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "تشل": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "المفرقع": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "جوك": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "asian"
+        },
+        "الشحام": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "غرينغو": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "جوسانو": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "ويتباك": {
+            "target": "race",
+            "sentiment": "negative",
+            "group": "hispanic"
+        },
+        "عبد": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "أوريو": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "الشمبانزي": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "شركة مصفاة نفط عمان": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "african"
+        },
+        "pocahontas": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "native"
+        },
+        "الهنود الحمر": {
+            "target": "race",
+            "sentiment": "neutral",
+            "group": "native"
+        },
+        "ندفة الثلج": {
+            "target": "other",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "غوي": {
+            "target": "religion",
+            "sentiment": "negative",
+            "group": "jewish"
+        },
+        "كيك": {
+            "target": "religion",
+            "sentiment": "negative",
+            "group": "jewish"
+        },
+        "yid": {
+            "target": "religion",
+            "sentiment": "neutral",
+            "group": "jewish"
+        },
+        "أسامة": {
+            "target": "religion",
+            "sentiment": "neutral",
+            "group": "middle-eastern"
+        },
+        "ارهابي": {
+            "target": "religion",
+            "sentiment": "neutral",
+            "group": "middle-eastern"
+        },
+        "خرقة": {
+            "target": "religion",
+            "sentiment": "negative",
+            "group": "middle-eastern"
+        },
+        "غنم": {
+            "target": "other",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "خافت": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "عاجز": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "غريب الأطوار": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "عائق": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "مدمن": {
+            "target": "other",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "قزم": {
+            "target": "other",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "مونغ": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "متخلف": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "انفصام الشخصية": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "سباز": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "المترف": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "متأخر": {
+            "target": "disability",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "المغول": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "مشوه": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
+        },
+        "عاهرة": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "وقحة": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "شمطاء": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "مهبل": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "ترانزيستور": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "بيمبو": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "فيمينازي": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "twat": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "الديوث": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "كوك": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "لحية العنق": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "men"
+        },
+        "مانليت": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "فول الصويا": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "men"
+        },
+        "وخز": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "individual"
+        },
+        "مثلية": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "women"
+        },
+        "فاكهي": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "مربية": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "طرفة عين": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "الوغد": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "men"
+        },
+        "خنثى": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "شاذه": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "سد": {
+            "target": "sexual_orientation",
+            "sentiment": "negative",
+            "group": "women"
+        },
+        "جنية": {
+            "target": "sexual_orientation",
+            "sentiment": "neutral",
+            "group": "women"
+        },
+        "متوحد": {
+            "target": "disability",
+            "sentiment": "neutral",
+            "group": "individual"
         }
     }
 }

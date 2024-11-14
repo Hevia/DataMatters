@@ -20,7 +20,7 @@ nltk.download('stopwords')
 # Define stop words and punctuation
 stop_words = set(stopwords.words('english'))
 punctuation = set(string.punctuation)
-custom_stop_words = set(["user", "y'all", "ur", "url", "ok", "oh", "lol", "lmao"])
+custom_stop_words = set(["user", "y'all", "ur", "url", "ok", "oh", "lol", "lmao", "....."])
 remove_words = stop_words.union(punctuation).union(custom_stop_words)
 
 # Tokenize tweets and remove stop words and punctuation

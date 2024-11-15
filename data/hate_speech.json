@@ -16,37 +16,37 @@
             "group": "african"
         },
         "gypsy": {
-            "target": "sexual_orientation",
+            "target": "race",
             "sentiment": "negative",
-            "group": "women"
+            "group": "romani"
         },
         "prostitute": {
-            "target": "sexual_orientation",
+            "target": "gender_identity",
             "sentiment": "negative",
             "group": "women"
         },
         "hooker": {
-            "target": "sexual_orientation",
+            "target": "gender_identity",
             "sentiment": "negative",
             "group": "women"
         },
         "cougar": {
-            "target": "sexual_orientation",
+            "target": "gender_identity",
             "sentiment": "negative",
             "group": "women"
         },
         "crone": {
-            "target": "sexual_orientation",
+            "target": "gender_identity",
             "sentiment": "negative",
             "group": "women"
         },
         "hussy": {
-            "target": "sexual_orientation",
+            "target": "gender_identity",
             "sentiment": "negative",
             "group": "women"
         },
         "ho": {
-            "target": "sexual_orientation",
+            "target": "gender_identity",
             "sentiment": "negative",
             "group": "women"
         },
@@ -580,7 +580,7 @@
         "tzigane": {
             "target": "race",
             "sentiment": "negative",
-            "group": "gypsy"
+            "group": "romani"
         },
         "youpinisation": {
             "target": "religion",

@@ -38,7 +38,8 @@ for tweet in tweets:
             'total_hate': 0,
             'target': {},
             'sentiment': {},
-            "group": {}
+            "group": {},
+            'word_counts': {}  # New field for tracking specific words
         }
     
     # normalize and tokenize tweets
@@ -55,6 +56,11 @@ for tweet in tweets:
             entry = hate_speech[lang].get(token)
             if entry:
                 hate_speech_counts[language]['total_hate'] += 1
+                
+                # Track specific word counts
+                if token not in hate_speech_counts[language]['word_counts']:
+                    hate_speech_counts[language]['word_counts'][token] = 0
+                hate_speech_counts[language]['word_counts'][token] += 1
                 
                 # Dynamically add target category if not exists
                 target = entry['target']
@@ -82,15 +88,21 @@ tweets_no_hate_speech = total_tweets - total_hate_speech_all
 for language in hate_speech_counts:
     # Create DataFrame for target categories
     target_df = pd.DataFrame.from_dict(hate_speech_counts[language]['target'], orient='index', columns=['count'])
-    target_df.index.name = 'Target'  # Add Target header
+    target_df.index.name = 'Target'
     target_df.to_csv(f'./output/targets/{language}_counts.csv')
     
     # Create DataFrame for sentiment categories
     sentiment_df = pd.DataFrame.from_dict(hate_speech_counts[language]['sentiment'], orient='index', columns=['count'])
-    sentiment_df.index.name = 'Sentiment'  # Add Sentiment header
+    sentiment_df.index.name = 'Sentiment'
     sentiment_df.to_csv(f'./output/sentiments/{language}_counts.csv')
 
     # Create DataFrame for group categories
     group_df = pd.DataFrame.from_dict(hate_speech_counts[language]['group'], orient='index', columns=['count'])
-    group_df.index.name = 'Group'  # Add Group header
+    group_df.index.name = 'Group'
     group_df.to_csv(f'./output/groups/{language}_counts.csv')
+
+    # Create DataFrame for word counts and save top 10
+    word_counts_df = pd.DataFrame.from_dict(hate_speech_counts[language]['word_counts'], orient='index', columns=['count'])
+    word_counts_df = word_counts_df.sort_values('count', ascending=False).head(10)
+    word_counts_df.index.name = 'Word'
+    word_counts_df.to_csv(f'./output/words/{language}_top10_words.csv')
